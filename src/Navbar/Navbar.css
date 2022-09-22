@@ -1,0 +1,32 @@
+#navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  /* width: 100%; */
+  background-color: #333;
+  padding: 0 1vmax 0 1vmax;
+  /* position: fixed; */
+
+  /* */
+}
+
+#navbar p {
+  float: left;
+  display: block;
+  color: #787878;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar p:hover {
+  color: white;
+}
+
+#Nav_btn {
+  color: white;
+  background-color: red;
+
+  padding: 10px;
+}
