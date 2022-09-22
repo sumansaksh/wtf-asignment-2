@@ -4,6 +4,12 @@
   border-radius: 1vmax;
   background-color: rgb(49, 49, 49);
   margin: 1vmax;
+  text-decoration: none;
+}
+
+.cardGymL {
+  text-decoration: none;
+  color: white;
 }
 .card_written_content {
   display: flex;

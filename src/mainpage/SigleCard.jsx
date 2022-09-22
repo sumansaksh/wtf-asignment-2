@@ -11,36 +11,42 @@ const sigleCard = ({ data, item }) => {
       {data.map((data, item) => {
         return (
           <>
-            <div className="card_main_container">
-              <div className="card_image_content">
-                <img
-                  src="https://lmimirror3pvr.azureedge.net/static/media/18461/3c152e9a-731d-45db-a205-5da7abe818b1/training-load-960x540.jpg"
-                  alt="imag"
-                />
-              </div>
-              <div className="card_written_content">
-                <h1>{data.gym_name}</h1>
-                <p>rating:{data.rating}</p>
-                <ReactStars
-                  edit={false}
-                  color="white"
-                  activeColor="red"
-                  size="window.innerWidth < 600 ? 20 : 25"
-                  value="data.rating"
-                  isHalf="true"
-                />
-                <p>{`${data.address1} ${data.address2} ${data.city}`}</p>
-                <p>{`${data.duration_text} away | ${data.distance}`}</p>
-                <div className="lowerDiv">
-                  <p>
-                    {data.plan_price !== null
-                      ? `₹ ${data.planprice} for 3 Months`
-                      : ""}
-                  </p>
-                  <button>Book Now</button>
+            <Link className="cardGymL" to={`/gymdetail/${data.gym_name}`}>
+              <div className="card_main_container">
+                <div className="card_image_content">
+                  <img
+                    src={
+                      data.cover_image !== null
+                        ? data.cover_image
+                        : "https://www.updatepedia.com/wp-content/uploads/2018/02/Gym-Status-and-Gym-Quotes-1-768x450.jpg"
+                    }
+                    alt="imag"
+                  />
+                </div>
+                <div className="card_written_content">
+                  <h1>{data.gym_name}</h1>
+                  <p>rating:{data.rating}</p>
+                  <ReactStars
+                    edit={false}
+                    color="white"
+                    activeColor="red"
+                    size="window.innerWidth < 600 ? 20 : 25"
+                    value="data.rating"
+                    isHalf="true"
+                  />
+                  <p>{`${data.address1} ${data.address2} ${data.city}`}</p>
+                  <p>{`${data.duration_text} away | ${data.distance}`}</p>
+                  <div className="lowerDiv">
+                    <p>
+                      {data.plan_price !== null
+                        ? `₹ ${data.planprice} for 3 Months`
+                        : ""}
+                    </p>
+                    <button>Book Now</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </>
         );
       })}

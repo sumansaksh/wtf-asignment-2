@@ -3,6 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import SigleCard from "./SigleCard.jsx";
 import { useNavigate } from "react-router-dom";
+import Banner from "./Banner";
 import "./Search.css";
 
 const Search = () => {
@@ -34,6 +35,7 @@ const Search = () => {
   };
   return (
     <>
+      <Banner />
       <div className="Search_main_div">
         <div className="Search_filters">
           <h2>filters</h2>
