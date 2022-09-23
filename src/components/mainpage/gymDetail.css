@@ -1,0 +1,25 @@
+.detailsMainDiv {
+  text-align: left;
+}
+
+.detailsSubMaindiv {
+  padding: 1vmax;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.detailsSubMaindiv > div {
+  padding: 1vmax;
+}
+
+.fasilitiesDiv,
+.whyTochoose {
+  display: flex;
+  justify-content: space-evenly;
+}
+.fasilitiesDiv > div > img {
+  width: 3vmax;
+}
+.whyTochoose > div > img {
+  width: 5vmax;
+}

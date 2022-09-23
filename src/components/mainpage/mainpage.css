@@ -1,0 +1,61 @@
+.parentContainer {
+  border: 1px solid red;
+  padding: 1vmax;
+}
+.Search_main_div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.search_bar {
+  width: 90%;
+  padding-left: 5%;
+  height: 3vmax;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 0.5vmax;
+}
+
+.search_Bar > svg,
+.search_Bar > .red_btn {
+  position: absolute;
+  justify-content: center;
+}
+.svg1 {
+  transform: translate(2vmax, 0.5vmax);
+  width: 4vh;
+  height: 4vh;
+}
+
+.svg2 {
+  transform: translate(-10vmax, 0.6vmax);
+  width: 2.5vh;
+  height: 2.5vh;
+  padding: 0.5vmax;
+  background-color: red;
+  border-radius: 2px;
+  padding-left: 1vmax;
+  padding-right: 1vmax;
+}
+
+.red_btn {
+  background-color: red;
+  transform: translate(-5vmax, 0.6vmax);
+  width: 4vmax;
+  /* padding-right: 1vmax;
+  padding-left: 1vmax; */
+  padding: 0.5vmax 1vmax 0.5vmax 1vmax;
+}
+.Search_filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Search_Price_inputs {
+  display: flex;
+}
+.Search_Price_inputs > input {
+  width: 30%;
+}
