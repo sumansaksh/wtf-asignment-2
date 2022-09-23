@@ -8,12 +8,13 @@ const GymDetail = () => {
   const { name } = useParams();
   const dispatch = useDispatch();
   const { loading, error, gyms, terms } = useSelector((state) => state.gyms);
+  const { loadingP, errorP, plans } = useSelector((state) => state.plans);
   const [singleData, setSingleData] = useState({});
   const [benifits, setBenifits] = useState([]);
-  const [plans, setPlans] = useState([]);
+
   useEffect(() => {
     for (let i = 0; i < gyms.length; i++) {
-      if (gyms[i].gym_name === name) {
+      if (gyms[i].user_id === name) {
         setSingleData(gyms[i]);
         setBenifits(gyms[i].benefits);
       }

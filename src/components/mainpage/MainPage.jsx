@@ -69,7 +69,11 @@ const MainPage = () => {
 
             <label className="serch_filter_lable">Location</label>
             <br />
-            <input placeHolder="Enter Location" type="text" />
+            <input
+              placeHolder="Enter Location"
+              type="text"
+              className="locationInput"
+            />
 
             <label className="serch_filter_lable">Price</label>
             <br />

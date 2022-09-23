@@ -60,19 +60,19 @@ export const planReducer = (state = { plans: [] }, action) => {
   switch (action.type) {
     case PLAN_REQUEST:
       return {
-        loading: true,
+        loadingP: true,
         plans: [],
       };
 
     case PLAN_SUCCES:
       return {
-        loading: false,
+        loadingP: false,
         plans: action.payload,
       };
 
     case PLAN_FAIL:
       return {
-        loading: false,
+        loadingP: false,
         error: action.payload,
       };
 

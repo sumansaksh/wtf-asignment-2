@@ -1,5 +1,4 @@
 .parentContainer {
-  border: 1px solid red;
   padding: 1vmax;
 }
 .Search_main_div {
@@ -56,6 +55,20 @@
 .Search_Price_inputs {
   display: flex;
 }
-.Search_Price_inputs > input {
+.Search_Price_inputs > input,
+.locationInput {
   width: 30%;
+  background-color: black;
+  border: 1px solid white;
+  height: 30px;
+}
+
+.locationInput {
+  width: 40%;
+}
+
+.Search_city_input,
+.Search_city_input > option {
+  width: 50%;
+  background-color: black;
 }

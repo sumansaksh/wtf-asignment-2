@@ -13,7 +13,7 @@ const sigleCard = ({ data, item }) => {
             <>
               <Link
                 className="cardGymL"
-                to={`/gym_details/${data.gym_name}`}
+                to={`/gym_details/${data.user_id}`}
                 onClick={console.log("clicked")}
               >
                 <div className="main_div">
@@ -46,10 +46,10 @@ const sigleCard = ({ data, item }) => {
                       </div>
                       <div className="card_footerDiv">
                         <button className="card_btn">Book Now</button>
-                        <h3>
+                        <h3 id="MOnts">
                           {data.plan_price !== null
                             ? `₹ ${data.planprice} for 3 Months`
-                            : "for 3 months"}
+                            : "3000 for 3 months"}
                         </h3>
                         <div></div>
                       </div>
